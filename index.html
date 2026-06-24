@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>YASMOTLUXE | Bespoke Tailoring &amp; Nigerian Heritage</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&amp;family=Bodoni+Moda:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind Config Verbatim -->
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-surface": "#1a1c1c",
+                    "tertiary-container": "#1b8700",
+                    "outline-variant": "#e3bdc7",
+                    "secondary-fixed-dim": "#c8c6c5",
+                    "on-tertiary": "#ffffff",
+                    "surface-variant": "#e2e2e2",
+                    "surface-container": "#eeeeee",
+                    "on-secondary": "#ffffff",
+                    "on-primary": "#ffffff",
+                    "error": "#ba1a1a",
+                    "inverse-on-surface": "#f0f1f1",
+                    "on-error": "#ffffff",
+                    "surface-bright": "#f9f9f9",
+                    "secondary-fixed": "#e5e2e1",
+                    "surface-container-high": "#e8e8e8",
+                    "surface-container-highest": "#e2e2e2",
+                    "on-tertiary-fixed": "#022100",
+                    "on-primary-container": "#fffbff",
+                    "background": "#f9f9f9",
+                    "on-error-container": "#93000a",
+                    "primary-fixed-dim": "#ffb0ca",
+                    "secondary": "#5f5e5e",
+                    "on-secondary-container": "#636262",
+                    "on-background": "#1a1c1c",
+                    "on-tertiary-container": "#f8ffef",
+                    "on-primary-fixed-variant": "#8d004e",
+                    "primary-container": "#e10080",
+                    "primary": "#b40065",
+                    "on-primary-fixed": "#3e001f",
+                    "on-surface-variant": "#5b3f48",
+                    "inverse-primary": "#ffb0ca",
+                    "primary-fixed": "#ffd9e3",
+                    "tertiary-fixed-dim": "#6ae04d",
+                    "surface-tint": "#b90068",
+                    "surface-container-lowest": "#ffffff",
+                    "on-secondary-fixed": "#1c1b1b",
+                    "tertiary-fixed": "#86fd66",
+                    "surface-container-low": "#f3f3f4",
+                    "tertiary": "#136b00",
+                    "on-tertiary-fixed-variant": "#0d5300",
+                    "surface-dim": "#dadada",
+                    "on-secondary-fixed-variant": "#474746",
+                    "outline": "#8f6e78",
+                    "secondary-container": "#e2dfde",
+                    "error-container": "#ffdad6",
+                    "inverse-surface": "#2f3131",
+                    "surface": "#f9f9f9"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "stack-xl": "120px",
+                    "container-max": "1440px",
+                    "stack-md": "40px",
+                    "stack-lg": "80px",
+                    "margin-desktop": "64px",
+                    "margin-mobile": "20px",
+                    "gutter": "24px"
+            },
+            "fontFamily": {
+                    "body-md": ["Montserrat"],
+                    "headline-md": ["Bodoni Moda"],
+                    "display-lg": ["Bodoni Moda"],
+                    "body-lg": ["Montserrat"],
+                    "label-lg": ["Montserrat"],
+                    "label-sm": ["Montserrat"],
+                    "headline-lg-mobile": ["Bodoni Moda"],
+                    "headline-lg": ["Bodoni Moda"],
+                    "display-lg-mobile": ["Bodoni Moda"]
+            },
+            "fontSize": {
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "500"}],
+                    "display-lg": ["80px", {"lineHeight": "90px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "label-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.1em", "fontWeight": "700"}],
+                    "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "headline-lg-mobile": ["32px", {"lineHeight": "38px", "fontWeight": "600"}],
+                    "headline-lg": ["40px", {"lineHeight": "48px", "fontWeight": "600"}],
+                    "display-lg-mobile": ["48px", {"lineHeight": "52px", "letterSpacing": "-0.01em", "fontWeight": "700"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .btn-primary-custom {
+            background-color: #b40065; /* primary from theme */
+            color: #ffffff;
+            font-family: 'Montserrat';
+            font-weight: 700;
+            border-radius: 0;
+            padding: 1rem 2rem;
+            transition: all 0.3s ease;
+        }
+        .btn-primary-custom:hover {
+            background-color: #e10080; /* primary-container */
+            transform: translateY(-2px);
+            box-shadow: 4px 4px 0px #1a1c1c;
+        }
+        .editorial-img-container {
+            border: 1px solid #e2e2e2;
+            transition: border-color 0.4s ease;
+            overflow: hidden;
+            background-color: #f3f3f4; /* surface-container-low */
+        }
+        .editorial-img-container:hover {
+            border-color: #1a1c1c;
+        }
+        .editorial-img-container img {
+            transition: transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .editorial-img-container:hover img {
+            transform: scale(1.05);
+        }
+        .line-accent {
+            height: 1px;
+            background: #e2e2e2;
+            width: 100%;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body-md">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-md border-b border-outline-variant/30">
+<div class="flex justify-between items-center px-margin-desktop py-stack-md w-full max-w-container-max mx-auto">
+<h1 class="font-display-lg text-headline-lg font-semibold tracking-tight text-primary">YASMOTLUXE</h1>
+<nav class="hidden md:flex gap-8">
+<a class="font-label-md text-label-md uppercase tracking-[0.1em] text-primary border-b border-primary pb-1" href="#">COLLECTIONS</a>
+<a class="font-label-md text-label-md uppercase tracking-[0.1em] text-secondary hover:text-primary transition-colors duration-300" href="#">NEW ARRIVALS</a>
+<a class="font-label-md text-label-md uppercase tracking-[0.1em] text-secondary hover:text-primary transition-colors duration-300" href="#">THE ATELIER</a>
+<a class="font-label-md text-label-md uppercase tracking-[0.1em] text-secondary hover:text-primary transition-colors duration-300" href="#">JOURNAL</a>
+</nav>
+<div class="flex items-center gap-6">
+<span class="material-symbols-outlined cursor-pointer text-primary" data-icon="search">search</span>
+<span class="material-symbols-outlined cursor-pointer text-primary" data-icon="person">person</span>
+<span class="material-symbols-outlined cursor-pointer text-primary" data-icon="shopping_bag">shopping_bag</span>
+</div>
+</div>
+</header>
+<main class="pt-[160px]">
+<!-- Hero Section -->
+<section class="px-margin-desktop w-full max-w-container-max mx-auto mb-stack-xl">
+<div class="grid grid-cols-12 gap-gutter items-end">
+<div class="col-span-12 lg:col-span-8">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary mb-4 block">The Collections Archive</span>
+<h2 class="font-display-lg text-display-lg leading-[0.9] mb-8">Heritage &amp; <br/>High Fashion</h2>
+</div>
+<div class="col-span-12 lg:col-span-4 pb-4">
+<p class="font-body-lg text-body-lg text-secondary border-l-2 border-primary pl-6">
+                    An curated exploration of our most defining silhouettes. Each piece is a masterclass in West African technical craftsmanship, where ancestral techniques meet the rigor of global haute couture.
+                </p>
+</div>
+</div>
+</section>
+<!-- Product 1: Solar Flare Ballgown (Previously Aso Ebi Glamour) -->
+<section class="px-margin-desktop w-full max-w-container-max mx-auto mb-stack-xl overflow-hidden">
+<div class="grid grid-cols-12 gap-gutter items-center">
+<div class="col-span-12 md:col-span-7 editorial-img-container relative group h-[819px]">
+<img alt="Solar Flare Ballgown" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8Md4CkMOrj7p6xhr9uLcFVsPpIWeIV7Rq6txOXuF1ROvEmATer_opkheigTcb7IHSfXtN_aYLlhfeXsKKwlFTuDjesj0swSjCKCb1QnheO5IcXub1hAaqUr5QH1ZSQVENq2C8Q-OBLz6me01Q2d0jzUjDIehO5AkMiJL6pGugvMzyCIFkON62buTF2BfQDXDT1cLKIIOI5o25C4X8u0lR08k67Uglvj-_6YtvGp3veN87AMZhBgyZu2LdzksIVmal3NpV--FrFhE"/>
+<div class="absolute top-8 left-8 bg-surface px-6 py-2 border border-on-surface">
+<span class="font-label-sm text-label-sm uppercase">Collection 001</span>
+</div>
+</div>
+<div class="col-span-12 md:col-span-4 md:col-start-9 space-y-8">
+<div>
+<h3 class="font-headline-lg text-headline-lg mb-4">Solar Flare Ballgown</h3>
+<div class="line-accent mb-6"></div>
+<p class="font-body-md text-body-md text-on-surface leading-relaxed">
+                        A conceptual evolution of traditional ceremonial wear. This silhouette features hand-manipulated organza architecture and precision-beaded embroidery that mirrors the intricate rhythms of Yoruba celebration. It is a dialogue between movement and structural permanence.
+                    </p>
+</div>
+<ul class="space-y-2 font-label-sm text-label-sm uppercase text-secondary">
+<li>• Hand-Manipulated Organza Arch</li>
+<li>• Precision Glass Beadwork</li>
+<li>• Atelier-Constructed Internal Bodice</li>
+</ul>
+<a class="btn-primary-custom inline-block w-full text-center" href="/booking">INQUIRE</a>
+</div>
+</div>
+</section>
+<!-- Product 2: Luminous Azure Caftan (Previously Legacy Duo) -->
+<section class="bg-surface-container-low py-stack-xl mb-stack-xl">
+<div class="px-margin-desktop w-full max-w-container-max mx-auto">
+<div class="grid grid-cols-12 gap-gutter">
+<div class="col-span-12 md:col-span-5 flex flex-col justify-center order-2 md:order-1">
+<span class="font-label-sm text-label-sm text-primary uppercase mb-2">Heritage Continuum</span>
+<h3 class="font-headline-lg text-headline-lg mb-6">Luminous Azure Caftan</h3>
+<p class="font-body-lg text-body-lg mb-8 italic">
+                        "A shared narrative of elegance, passing through generations."
+                    </p>
+<p class="font-body-md text-body-md mb-8">
+                        Designed as a visual lineage, the Luminous Azure Caftan collection features matching silhouettes tailored for the matriarch and the daughter. Utilizing hand-loomed Aso-Oke woven with metallic silk threads, each piece represents the passing of cultural technical mastery from one era to the next.
+                    </p>
+<a class="btn-primary-custom inline-block w-fit px-12" href="/booking">INQUIRE</a>
+</div>
+<div class="col-span-12 md:col-span-7 order-1 md:order-2">
+<div class="editorial-img-container h-[716px]">
+<img alt="Luminous Azure Caftan" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-sMEs9nTFJCOuP6eLTO26nJHAkDIHPCU8tvRXr50AbHHWRfko9j_Z2m8-yzmOD3mTfdLO-cxeY3NusV7S4NBr2CA-_noHqksw3JtxnIZ7yskLeIU5jTdyEbfTQWmnrCtlLvCgSNIfZrabaBgbtyAwvgH4G1YvfnbTeiTVLV6L8vSkjGuBhqjY6DYVsH91KXo4145N0b0nl2Nyxn3UB-P0XX0h1fF7bwGXa5MWkD7lj32sFHGz2_8hwlX1IV7W7HclZSMhkbOteio"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Product 3: Heritage Silk Gown (Bento Style) -->
+<section class="px-margin-desktop w-full max-w-container-max mx-auto mb-stack-xl">
+<div class="grid grid-cols-12 gap-gutter">
+<div class="col-span-12 md:col-span-8">
+<div class="editorial-img-container h-[614px] mb-gutter">
+<img alt="Heritage Silk Gown Detail" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDxMe0B3cHcwgCzA1Nloqxix8H3QYvxs_tAL9rhZOe0TT9AtyueKguv0-in1BajtGlJ6INbtCfOIGGvhBiK1rvvYxvkiWdCmz_DSISRIZnVfJ_VkHISp5PC7VWW89DyATpbx52mVUa5B9pgDpEPAcCuqqOSnZuZSbjsSz8vwvynpOfGg6Dey9foWQz9N8h1wH9pqwlv7WBRmv7WExX-jAbGbDU4w8BBV_DVYjeGaMPKRc7b_jWBY8mdctdjWp6oQAsHaMjyjDE7yEw"/>
+</div>
+<div class="grid grid-cols-2 gap-gutter">
+<div class="bg-primary p-12 text-on-primary">
+<h4 class="font-headline-md text-headline-md mb-4 uppercase">The Craft</h4>
+<p class="font-body-md text-body-md">Our atelier specializes in the reconstruction of ancestral textiles. By integrating traditional loom techniques with contemporary draping, we create garments that are both artifacts and avant-garde couture.</p>
+</div>
+<div class="border border-on-surface p-12 flex flex-col justify-between bg-surface">
+<span class="font-display-lg text-headline-lg">150h</span>
+<p class="font-label-lg text-label-lg uppercase">Average time dedicated to hand-finishing a single archive piece.</p>
+</div>
+</div>
+</div>
+<div class="col-span-12 md:col-span-4 flex flex-col">
+<div class="bg-surface-container-highest p-12 flex-grow mb-gutter">
+<h3 class="font-headline-lg text-headline-lg mb-6">Heritage Silk Gown</h3>
+<p class="font-body-md text-body-md mb-8">
+                        A study in purity and presence. This floor-length sweep utilizes double-ply mulberry silk, hand-dyed using the Adire Eleko resist-method. The pattern is a geometric interpretation of traditional West African architecture, rendered in monochromatic tones.
+                    </p>
+<a class="btn-primary-custom inline-block w-full text-center" href="/booking">INQUIRE</a>
+</div>
+<div class="editorial-img-container h-[409px]">
+<img alt="Heritage Silk Gown Profile" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDxMe0B3cHcwgCzA1Nloqxix8H3QYvxs_tAL9rhZOe0TT9AtyueKguv0-in1BajtGlJ6INbtCfOIGGvhBiK1rvvYxvkiWdCmz_DSISRIZnVfJ_VkHISp5PC7VWW89DyATpbx52mVUa5B9pgDpEPAcCuqqOSnZuZSbjsSz8vwvynpOfGg6Dey9foWQz9N8h1wH9pqwlv7WBRmv7WExX-jAbGbDU4w8BBV_DVYjeGaMPKRc7b_jWBY8mdctdjWp6oQAsHaMjyjDE7yEw"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Call to Action -->
+<section class="py-stack-xl border-t border-outline-variant">
+<div class="px-margin-desktop w-full max-w-container-max mx-auto text-center">
+<h2 class="font-display-lg text-headline-lg mb-8 uppercase tracking-tighter">Define Your Legacy</h2>
+<p class="font-body-lg text-body-lg max-w-2xl mx-auto mb-12">
+                Experience the pinnacle of bespoke tailoring. Every stitch is a commitment to technical excellence and a celebration of African heritage.
+            </p>
+<div class="flex flex-col md:flex-row gap-6 justify-center">
+<button class="btn-primary-custom px-16">BOOK A CONSULTATION</button>
+<button class="border-2 border-on-surface px-16 py-4 font-label-lg text-label-lg hover:bg-on-surface hover:text-surface transition-all duration-300">VIEW THE ATELIER</button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface border-t border-outline-variant/50">
+<div class="flex flex-col gap-stack-xl px-margin-desktop py-stack-xl w-full max-w-container-max mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-start gap-12">
+<div class="max-w-xs">
+<h2 class="font-display-lg text-headline-md text-primary mb-6">YASMOTLUXE</h2>
+<p class="font-body-md text-body-md text-secondary">A contemporary fashion house bridging the gap between traditional West African craftsmanship and global high-fashion standards.</p>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-3 gap-16">
+<div class="flex flex-col gap-4">
+<span class="font-label-lg text-label-lg uppercase">Collections</span>
+<a class="font-label-md text-label-md uppercase tracking-[0.1em] text-secondary hover:underline" href="#">Solar Flare Ballgown</a>
+<a class="font-label-md text-label-md uppercase tracking-[0.1em] text-secondary hover:underline" href="#">Luminous Azure Caftan</a>
+<a class="font-label-md text-label-md uppercase tracking-[0.1em] text-secondary hover:underline" href="#">Heritage Silk Gown</a>
+</div>
+<div class="flex flex-col gap-4">
+<span class="font-label-lg text-label-lg uppercase">Support</span>
+<a class="font-label-md text-label-md uppercase tracking-[0.1em] text-secondary hover:underline" href="#">SHIPPING &amp; RETURNS</a>
+<a class="font-label-md text-label-md uppercase tracking-[0.1em] text-secondary hover:underline" href="#">CARE GUIDE</a>
+<a class="font-label-md text-label-md uppercase tracking-[0.1em] text-secondary hover:underline" href="#">CONTACT</a>
+</div>
+<div class="flex flex-col gap-4">
+<span class="font-label-lg text-label-lg uppercase">Legal</span>
+<a class="font-label-md text-label-md uppercase tracking-[0.1em] text-secondary hover:underline" href="#">PRIVACY POLICY</a>
+<a class="font-label-md text-label-md uppercase tracking-[0.1em] text-secondary hover:underline" href="#">TERMS OF SERVICE</a>
+</div>
+</div>
+</div>
+<div class="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-outline-variant/30 gap-6">
+<p class="font-label-md text-label-md text-secondary">© 2024 YASMOTLUXE ATELIER. ALL RIGHTS RESERVED.</p>
+<div class="flex gap-6">
+<span class="material-symbols-outlined text-primary cursor-pointer">public</span>
+<span class="material-symbols-outlined text-primary cursor-pointer">camera</span>
+<span class="material-symbols-outlined text-primary cursor-pointer">mail</span>
+</div>
+</div>
+</div>
+</footer>
+<script>
+    // Simple Intersection Observer for scroll reveal effects
+    const observerOptions = {
+        threshold: 0.1
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('opacity-100');
+                entry.target.classList.remove('opacity-0', 'translate-y-10');
+            }
+        });
+    }, observerOptions);
+
+    document.querySelectorAll('section').forEach(section => {
+        section.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-10');
+        observer.observe(section);
+    });
+</script>
+</body></html>
