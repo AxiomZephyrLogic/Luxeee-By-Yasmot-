@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>YASMOTLUXE | Nigerian Luxury Bespoke Atelier</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400..900;1,400..900&amp;family=Montserrat:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "outline-variant": "#e3bdc7",
+                      "on-primary-container": "#fffbff",
+                      "surface-dim": "#dadada",
+                      "primary-fixed-dim": "#ffb0ca",
+                      "on-tertiary-container": "#f8ffef",
+                      "error": "#ba1a1a",
+                      "on-surface-variant": "#5b3f48",
+                      "on-secondary-container": "#636262",
+                      "surface-tint": "#b90068",
+                      "secondary-fixed": "#e5e2e1",
+                      "background": "#ffffff",
+                      "on-surface": "#1a1c1c",
+                      "primary-container": "#e10080",
+                      "secondary-fixed-dim": "#c8c6c5",
+                      "outline": "#8f6e78",
+                      "on-secondary-fixed": "#1c1b1b",
+                      "tertiary-fixed": "#86fd66",
+                      "primary": "#b40065",
+                      "surface-container-low": "#f3f3f4",
+                      "on-tertiary-fixed": "#022100",
+                      "on-primary": "#ffffff",
+                      "surface-bright": "#ffffff",
+                      "surface-container-high": "#e8e8e8",
+                      "on-tertiary-fixed-variant": "#0d5300",
+                      "on-primary-fixed-variant": "#8d004e",
+                      "inverse-primary": "#ffb0ca",
+                      "on-secondary-fixed-variant": "#474746",
+                      "surface-variant": "#e2e2e2",
+                      "surface-container-lowest": "#ffffff",
+                      "tertiary-fixed-dim": "#6ae04d",
+                      "surface-container-highest": "#e2e2e2",
+                      "primary-fixed": "#ffd9e3",
+                      "on-tertiary": "#ffffff",
+                      "tertiary": "#136b00",
+                      "on-background": "#1a1c1c",
+                      "surface-container": "#eeeeee",
+                      "secondary": "#5f5e5e",
+                      "on-secondary": "#ffffff",
+                      "error-container": "#ffdad6",
+                      "surface": "#ffffff",
+                      "on-error-container": "#93000a",
+                      "tertiary-container": "#1b8700",
+                      "inverse-surface": "#2f3131",
+                      "inverse-on-surface": "#f0f1f1",
+                      "on-primary-fixed": "#3e001f",
+                      "on-error": "#ffffff",
+                      "secondary-container": "#e2dfde",
+                      "electric-pink": "#FF1493"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "gutter": "24px",
+                      "stack-md": "40px",
+                      "stack-xl": "120px",
+                      "margin-mobile": "20px",
+                      "container-max": "1440px",
+                      "stack-lg": "80px",
+                      "margin-desktop": "64px"
+              },
+              "fontFamily": {
+                      "headline-lg": ["Bodoni Moda"],
+                      "display-lg": ["Bodoni Moda"],
+                      "body-lg": ["Montserrat"],
+                      "display-lg-mobile": ["Bodoni Moda"],
+                      "label-sm": ["Montserrat"],
+                      "label-lg": ["Montserrat"],
+                      "headline-lg-mobile": ["Bodoni Moda"],
+                      "headline-md": ["Bodoni Moda"],
+                      "body-md": ["Montserrat"]
+              },
+              "fontSize": {
+                      "headline-lg": ["40px", {"lineHeight": "48px", "fontWeight": "600"}],
+                      "display-lg": ["80px", {"lineHeight": "90px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                      "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                      "display-lg-mobile": ["48px", {"lineHeight": "52px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                      "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                      "label-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.1em", "fontWeight": "700"}],
+                      "headline-lg-mobile": ["32px", {"lineHeight": "38px", "fontWeight": "600"}],
+                      "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "500"}],
+                      "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}]
+              }
+            },
+          },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .btn-pink-border {
+            border: 4px solid #FF1493;
+            background: #1a1c1c;
+            color: #ffffff;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .btn-pink-border:hover {
+            background: #FF1493;
+            border-color: #FF1493;
+            transform: scale(1.02);
+        }
+        .editorial-rule {
+            height: 1px;
+            background-color: #1a1c1c;
+            width: 100%;
+        }
+        .custom-cursor {
+            width: 20px;
+            height: 20px;
+            border: 1px solid #FF1493;
+            border-radius: 50%;
+            position: fixed;
+            pointer-events: none;
+            z-index: 9999;
+            transition: transform 0.1s ease;
+        }
+        .text-outline {
+            -webkit-text-stroke: 1px #1a1c1c;
+            color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface selection:bg-electric-pink/30">
+<div class="custom-cursor hidden md:block" id="cursor"></div>
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-md border-b border-outline-variant/30">
+<nav class="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-4 md:py-6 w-full max-w-container-max mx-auto">
+<div class="flex items-center gap-8">
+<a class="font-display-lg text-headline-md md:text-headline-lg font-bold tracking-tight text-on-surface" href="#">YASMOTLUXE</a>
+</div>
+<div class="hidden md:flex gap-10">
+<a class="font-label-md text-label-md uppercase tracking-[0.1em] text-on-surface border-b-2 border-on-surface pb-1" href="#">COLLECTIONS</a>
+<a class="font-label-md text-label-md uppercase tracking-[0.1em] text-secondary hover:text-on-surface transition-colors duration-300" href="#">NEW ARRIVALS</a>
+<a class="font-label-md text-label-md uppercase tracking-[0.1em] text-secondary hover:text-on-surface transition-colors duration-300" href="#">THE ATELIER</a>
+<a class="font-label-md text-label-md uppercase tracking-[0.1em] text-secondary hover:text-on-surface transition-colors duration-300" href="#">JOURNAL</a>
+</div>
+<div class="flex items-center gap-6">
+<span class="material-symbols-outlined cursor-pointer text-on-surface" data-icon="search">search</span>
+<span class="material-symbols-outlined cursor-pointer text-on-surface" data-icon="person">person</span>
+<div class="relative">
+<span class="material-symbols-outlined cursor-pointer text-on-surface" data-icon="shopping_bag">shopping_bag</span>
+<span class="absolute -top-2 -right-2 bg-electric-pink text-white text-[10px] w-4 h-4 flex items-center justify-center rounded-full">0</span>
+</div>
+<span class="material-symbols-outlined md:hidden cursor-pointer" data-icon="menu">menu</span>
+</div>
+</nav>
+</header>
+<main class="pt-24">
+<!-- Hero Section -->
+<section class="relative min-h-[90vh] flex items-center overflow-hidden bg-white">
+<div class="grid md:grid-cols-12 gap-gutter w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop items-center">
+<div class="md:col-span-6 z-10">
+<span class="font-label-lg text-label-lg text-electric-pink mb-4 block tracking-[0.2em] uppercase font-bold">Bespoke Couture Excellence</span>
+<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg mb-8 leading-none text-on-surface">THE NEW <br/><span class="italic text-outline">VISION</span> <br/>OF LUXURY</h1>
+<p class="font-body-lg text-body-lg text-secondary max-w-md mb-10 leading-relaxed">
+                        Nigerian luxury redefined through the lens of Yasmin M. YasmotLuxe blends master craftsmanship with aggressive modern silhouettes for the contemporary woman.
+                    </p>
+<div class="flex gap-4">
+<button class="btn-pink-border px-10 py-5 font-label-lg text-label-lg uppercase tracking-widest font-bold">
+                            Book Commission
+                        </button>
+</div>
+</div>
+<div class="md:col-span-6 relative mt-12 md:mt-0">
+<div class="relative w-full aspect-[4/5] overflow-hidden shadow-2xl">
+<img alt="Founder of YasmotLuxe in a vibrant orange and white patterned couture dress" class="w-full h-full object-cover object-top" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBVWqJER9K-5OZsAcybA1yeRTGfqHxNXxKmz_MMehzuDvuJchzrXWGrcR-9rbNRa8vpENti5OzmZ1-o69hQdzK9Vkn0Jez3IzQZyoB74g27F7atx3IMkATHbQShRyCY0e1F9dCj-tVCu5QnfELG_G5PMs0nv1PeSPudOfUtbGFk9LhmQtw0sJ7Sc2-lAMaA5KCsHnpUK_yN2IPBBcVjryNOQA2-r5UpeeZFcyIjEcpwgco9wlWeiEsbedPiYUy0ezJNvw7OK2Wl2qs"/>
+</div>
+<div class="absolute top-1/2 -right-12 hidden md:block transform -rotate-90 origin-right">
+<span class="font-label-lg text-label-lg tracking-[0.5em] text-on-surface opacity-20 uppercase whitespace-nowrap">YASMOTLUXE ATELIER 2024</span>
+</div>
+</div>
+</div>
+</section>
+<!-- The Atelier Archive -->
+<section class="py-stack-xl px-margin-mobile md:px-margin-desktop bg-white">
+<div class="max-w-container-max mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+<div class="max-w-xl">
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg mb-6 text-on-surface uppercase tracking-tight">THE ATELIER <span class="text-electric-pink">ARCHIVE</span></h2>
+<div class="editorial-rule mb-6 bg-on-surface"></div>
+<p class="font-body-md text-body-md text-secondary">A curation of our most iconic bespoke creations. Each piece is a testament to the intersection of cultural heritage and contemporary avant-garde design.</p>
+</div>
+<a class="font-label-lg text-label-lg uppercase text-on-surface border-b-2 border-electric-pink pb-1 hover:text-electric-pink transition-all font-bold" href="#">View All Masterpieces</a>
+</div>
+<div class="grid md:grid-cols-2 gap-12">
+<!-- Archive Item 1 -->
+<div class="group cursor-pointer">
+<div class="overflow-hidden mb-6 relative border border-outline-variant/30 hover:border-on-surface transition-all duration-500 shadow-lg">
+<img alt="YasmotLuxe Bespoke Collection Item" class="w-full aspect-square object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuANFRfkJ8SJoUQXy2A4dWsF_5XAmo43YJ5fjoJrMjBYeex_1MwFwYjcZeoU8miVi3LarP_FFhTwViC26kq6BH5FpC8JaS4ZyAAuIlr27ce2o2Jkr6gM0MjJaHJmFvr2hUpWLrSep4M7JvSa_XOVTAQFAaZ-A0pRrxiVhJi8MGYDHrsZVFdHyv7JMZ184oYswF66LEG5mQLpqqGhRjwV6C-azV8kAHxO2FvsmeHLFGFLbX441-mUPrl6Di3cTXvjYF4UdiRih7spkkE"/>
+<div class="absolute bottom-4 right-4 bg-white px-4 py-2 opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="font-label-sm text-label-sm text-on-surface uppercase font-bold">Archive 01</span>
+</div>
+</div>
+<h3 class="font-headline-md text-headline-md mb-2 text-on-surface">Legacy Pattern Set</h3>
+<p class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Signature Print • Maternal Collection</p>
+</div>
+<!-- Archive Item 2 -->
+<div class="group cursor-pointer">
+<div class="overflow-hidden mb-6 relative border border-outline-variant/30 hover:border-on-surface transition-all duration-500 shadow-lg">
+<img alt="Full length bespoke YasmotLuxe design" class="w-full aspect-square object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDbNa9f6VshdfSHdn4WetGIBgaPiQwfoWiMFoS-qGhp7jiAw3BUbJTcBhj0py--BLLT3LLJGvlRnR-eN9XB0SlfVwpGIafcaAIKs1DsgLwss5JdUfqBNAK2ncdiOXaIBlP9JWUAUQ5BqAy-vgDjMvOn6zxrYIgBwoXS5RrdSNvb4xu5fiPAxDw5vNhQmJAvNsziPI7mUfJ4TckW7EDvz0QXy21RVCnCsb7xFaFl-YC4EOmWKAjj7UHKXy8TuBZByccOrsTzyjq7irU"/>
+<div class="absolute bottom-4 right-4 bg-white px-4 py-2 opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="font-label-sm text-label-sm text-on-surface uppercase font-bold">Archive 02</span>
+</div>
+</div>
+<h3 class="font-headline-md text-headline-md mb-2 text-on-surface">Heritage Blue Mosaic</h3>
+<p class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Traditional Silhouette • Couture Hand-finish</p>
+</div>
+</div>
+</div>
+</section>
+<!-- The Designer's Vision Section -->
+<section class="py-stack-xl bg-surface-container-low relative overflow-hidden">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop grid md:grid-cols-2 gap-16 items-center">
+<div class="relative order-2 md:order-1">
+<div class="border-4 border-electric-pink absolute -top-4 -left-4 w-full h-full -z-10"></div>
+<img alt="Yasmin M., Creative Director of YasmotLuxe" class="w-full h-auto object-cover shadow-2xl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD9PSHnMPIrLfmWS4GV19JbvXR19bj4lnX-pTU_oR7dJd4btoR21Axm8c30vl11fhTC7sMdlR25VqaPyjfb0A-WufTHGpEDRome72yd8GahXsQN9lmgu_fRGPSJ0dc-aoye1DH2hlOJ2HGAcuUOfEHd-2Patuq2VWJvj1BgpXVPWxC74eOia_vr1VfUI2MuypeyhV-JnAL30kER0FB75y27fMTqkRSx4l9vOjmgM3nQ8mV60am3ji27AbEEt1pdVFDjyYhefFYQYfE"/>
+</div>
+<div class="space-y-8 order-1 md:order-2">
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface uppercase">THE <span class="italic font-normal">DESIGNER'S</span> <br/>VISION</h2>
+<div class="editorial-rule bg-on-surface"></div>
+<p class="font-body-lg text-body-lg text-secondary leading-relaxed">
+                        At YasmotLuxe, luxury is not just an aesthetic; it is a commitment to the precision of the stitch and the integrity of the maker. Founded by Yasmin M., the atelier represents a bridge between Lagos heritage and global luxury standards.
+                    </p>
+<p class="font-body-md text-body-md text-on-surface italic border-l-4 border-electric-pink pl-6 py-2">
+                        "We aren't just making clothes; we are crafting the visual narrative for the modern woman who values both her roots and her future. Each piece tells a story of Lagosian excellence."
+                    </p>
+<div class="flex items-center gap-4 pt-6">
+<div class="w-12 h-px bg-on-surface"></div>
+<span class="font-label-lg text-label-lg uppercase tracking-widest text-on-surface font-bold">Yasmin M., Creative Director</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Call to Action -->
+<section class="py-stack-xl bg-on-surface text-white text-center relative">
+<div class="max-w-4xl mx-auto px-margin-mobile relative z-10">
+<h2 class="font-display-lg text-headline-lg-mobile md:text-headline-lg mb-8 uppercase tracking-[0.1em]">THE EVOLUTION IS <br/><span class="text-outline border-white" style="-webkit-text-stroke: 1px white;">HERE</span></h2>
+<p class="font-body-lg text-body-lg mb-12 opacity-80 max-w-2xl mx-auto">Join the exclusive world of YasmotLuxe. Be the first to experience our next seasonal drop and private atelier events.</p>
+<div class="flex flex-col md:flex-row gap-6 justify-center items-center">
+<button class="btn-pink-border px-12 py-6 font-label-lg text-label-lg uppercase tracking-[0.2em] shadow-2xl font-bold bg-white !text-on-surface hover:!bg-electric-pink hover:!text-white">
+                        DISCOVER THE YASMOTLUXE EVOLUTION
+                    </button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-white border-t border-outline-variant/50 pt-stack-xl pb-10">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="grid md:grid-cols-4 gap-12 mb-16">
+<div class="md:col-span-2">
+<h2 class="font-display-lg text-headline-md text-on-surface mb-6 font-bold">YASMOTLUXE</h2>
+<p class="font-body-md text-body-md text-secondary max-w-sm mb-8 leading-relaxed">
+                        Nigerian luxury bespoke atelier dedicated to the art of master couture. Handcrafted in Lagos, worn globally.
+                    </p>
+<div class="flex gap-6">
+<a class="text-on-surface hover:text-electric-pink transition-colors" href="#"><span class="material-symbols-outlined" data-icon="public">public</span></a>
+<a class="text-on-surface hover:text-electric-pink transition-colors" href="#"><span class="material-symbols-outlined" data-icon="share">share</span></a>
+<a class="text-on-surface hover:text-electric-pink transition-colors" href="#"><span class="material-symbols-outlined" data-icon="camera">camera</span></a>
+</div>
+</div>
+<div>
+<h4 class="font-label-lg text-label-lg text-on-surface uppercase mb-6 tracking-wider font-bold">The Atelier</h4>
+<ul class="flex flex-col gap-4 font-label-md text-label-md text-secondary uppercase tracking-[0.1em]">
+<li><a class="hover:text-electric-pink transition-all" href="#">Collections</a></li>
+<li><a class="hover:text-electric-pink transition-all" href="#">Bespoke Process</a></li>
+<li><a class="hover:text-electric-pink transition-all" href="#">Care Guide</a></li>
+<li><a class="hover:text-electric-pink transition-all" href="#">Journal</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label-lg text-label-lg text-on-surface uppercase mb-6 tracking-wider font-bold">Concierge</h4>
+<ul class="flex flex-col gap-4 font-label-md text-label-md text-secondary uppercase tracking-[0.1em]">
+<li><a class="hover:text-electric-pink transition-all" href="#">Contact</a></li>
+<li><a class="hover:text-electric-pink transition-all" href="#">Shipping &amp; Returns</a></li>
+<li><a class="hover:text-electric-pink transition-all" href="#">Terms of Service</a></li>
+<li><a class="hover:text-electric-pink transition-all" href="#">Privacy Policy</a></li>
+</ul>
+</div>
+</div>
+<div class="editorial-rule mb-8 opacity-20 bg-on-surface"></div>
+<div class="flex flex-col md:flex-row justify-between items-center gap-6">
+<p class="font-label-md text-label-md uppercase tracking-[0.1em] text-secondary">© 2024 YASMOTLUXE ATELIER. ALL RIGHTS RESERVED.</p>
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary">MADE IN LAGOS</span>
+<div class="w-4 h-4 bg-electric-pink rounded-full"></div>
+</div>
+</div>
+</div>
+</footer>
+<script>
+        // Custom Cursor Interaction
+        const cursor = document.getElementById('cursor');
+        document.addEventListener('mousemove', (e) => {
+            cursor.style.left = e.clientX + 'px';
+            cursor.style.top = e.clientY + 'px';
+        });
+
+        document.querySelectorAll('a, button').forEach(el => {
+            el.addEventListener('mouseenter', () => {
+                cursor.style.transform = 'scale(2.5)';
+                cursor.style.backgroundColor = 'rgba(255, 20, 147, 0.1)';
+            });
+            el.addEventListener('mouseleave', () => {
+                cursor.style.transform = 'scale(1)';
+                cursor.style.backgroundColor = 'transparent';
+            });
+        });
+
+        // Simple Intersection Observer for Fade-in effects
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    entry.target.classList.remove('opacity-0', 'translate-y-10');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section').forEach(section => {
+            section.classList.add('transition-all', 'duration-1000', 'ease-out', 'opacity-0', 'translate-y-10');
+            observer.observe(section);
+        });
+    </script>
+</body></html>
